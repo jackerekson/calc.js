@@ -18,38 +18,38 @@ reader.question("What would you like to calculate?", function(input){
 		let sum = num1 + num2;
 		console.log(`${num1} + ${num2} = ${sum}`)
 	}
-	if (mathSymbol === '-') {
+	else if (mathSymbol === '-') {
 		let sum = num1 - num2;
 		console.log(`${num1} - ${num2} = ${sum}`)
 	}
-	if (mathSymbol === '/') {
+	else if (mathSymbol === '/') {
 		let sum = num1 / num2;
 		console.log(`${sum1} / ${sum2} = ${sum}`)
 	}
-	if (mathSymbol === '*') {
+	else if (mathSymbol === '*') {
 		let sum = num1 * num2;
 		console.log(`${sum1} * ${sum2} = ${sum}`)
 	}
-	if (mathSymbol === 'sqrt') {
+	else if (mathSymbol === 'sqrt') {
 		let sum = Math.sqrt(num1);
 		console.log(`The square root of ${num1} is ${sum}`)
 	}
-	if (mathSymbol === '^2') {
+	else if (mathSymbol === '^2') {
 		let sum = num1 * num1;
 		console.log(`${num1} squared is ${sum}`)
 	}
-	if (mathSymbol === '^3') {
+	else if (mathSymbol === '^3') {
 		let sum = num1*num1*num1;
 		console.log(`${num1} cubed is${sum}`)
 	}
-	if (mathSymbol === '^') {
-		let power = num2;
+	else if (mathSymbol === '^') {
+		let power = num1;
 		for(let i =1; i < num2; i++) {
-			power=power*num2;
+			power=power*num1;
 		}
 		console.log(`${num1} to the power of ${num2} is ${power}`);
 	}
-	if (mathSymbol === '%') {
+	else if (mathSymbol === '%') {
 		let remain = num1 % num2;
 		console.log(`${num1} divided by ${num2} leaves a remainder of ${remain}`)
 	}
