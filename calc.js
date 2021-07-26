@@ -33,7 +33,27 @@ reader.question("What would you like to calculate?", function(input){
 	if (mathSymbol === 'sqrt') {
 		let sum = Math.sqrt(num1);
 		console.log(`The square root of ${num1} is ${sum}`)
-	}else {
+	}
+	if (mathSymbol === '^2') {
+		let sum = num1 * num1;
+		console.log(`${num1} squared is ${sum}`)
+	}
+	if (mathSymbol === '^3') {
+		let sum = num1*num1*num1;
+		console.log(`${num1} cubed is${sum}`)
+	}
+	if (mathSymbol === '^') {
+		let power = num2;
+		for(let i =1; i < num2; i++) {
+			power=power*num2;
+		}
+		console.log(`${num1} to the power of ${num2} is ${power}`);
+	}
+	if (mathSymbol === '%') {
+		let remain = num1 % num2;
+		console.log(`${num1} divided by ${num2} leaves a remainder of ${remain}`)
+	}
+	else {
 		console.log('Please make a valid entry');
 	}
 
